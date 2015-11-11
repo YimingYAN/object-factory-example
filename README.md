@@ -1,4 +1,6 @@
-Automatic object factory in C++
+Automatic Object Factory in C++
+Yiming Yan 
+
 
 Inspired by
 http://www.codeproject.com/Articles/567242/AplusC-b-bplusObjectplusFactory

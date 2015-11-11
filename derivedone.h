@@ -3,6 +3,7 @@
 
 #include "base.h"
 #include "global_macro.h"
+namespace GroupOne {
 
 class DerivedOne : public Base
 {
@@ -11,4 +12,5 @@ public:
     DerivedOne(Base* base);
 };
 
+}
 #endif // DERIVEDONE_H

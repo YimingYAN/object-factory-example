@@ -8,8 +8,8 @@ int main()
 {
     Base* base = new Base();
     qDebug() << "Base: " << base;
-    QString first("DerivedOne");
-    QString second("DerivedTwo");
+    QString first("GroupOne::DerivedOne");
+    QString second("GroupTwo::DerivedTwo");
     ObjectFactory* fct = ObjectFactory::instance();
 
     qDebug() << "Create DerivedOne";

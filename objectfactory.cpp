@@ -29,5 +29,6 @@ Base *ObjectFactory::create(QString objName, Base *parent)
 
 void ObjectFactory::registerFactory(QString name, IConcreteFactory *factory)
 {
+    qDebug() << "Register: " << name;
     m_factoryFunctionRegistry[name] = factory;
 }

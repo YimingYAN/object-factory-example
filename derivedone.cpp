@@ -1,5 +1,5 @@
 #include "derivedone.h"
-
+using namespace GroupOne;
 DerivedOne::DerivedOne()
 {
     m_parent = 0;
@@ -12,5 +12,5 @@ DerivedOne::DerivedOne(Base *base)
     m_name = "DerivedOne";
 }
 
-REGISTER_TYPE(DerivedOne)
+REGISTER_TYPE_2(GroupOne,DerivedOne)
 

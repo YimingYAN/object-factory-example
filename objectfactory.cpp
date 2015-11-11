@@ -30,7 +30,7 @@ Base *ObjectFactory::create(QString objName, Base *parent)
     return base;
 }
 
-void ObjectFactory::registerFactory(QString name, IFactory *factory)
+void ObjectFactory::registerFactory(QString name, IConcreteFactory *factory)
 {
     m_factoryFunctionRegistry[name] = factory;
 }

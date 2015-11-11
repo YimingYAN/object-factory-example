@@ -3,6 +3,7 @@
 
 #include "base.h"
 #include "global_macro.h"
+
 class DerivedOne : public Base
 {
 public:

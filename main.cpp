@@ -13,14 +13,14 @@ int main()
     QString second("DerivedTwo");
     ObjectFactory* fct = ObjectFactory::instance();
 
-    qDebug() << "Create DeriveOne";
+    qDebug() << "Create DerivedOne";
     Base* one = fct->create(first, base);
-    qDebug() << one->name();
+    qDebug() << "This is " << one->name();
     qDebug() << one->parent();
 
-    qDebug() << "Create DeriveTwo";
+    qDebug() << "Create DerivedTwo";
     Base* two = fct->create(second, base);
-    qDebug() << two->name();
+    qDebug() << "This is " << two->name();
     qDebug() << two->parent();
 
     delete fct;

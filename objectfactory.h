@@ -1,21 +1,21 @@
 #ifndef OBJECTFACTORY_H
 #define OBJECTFACTORY_H
-#include "ifactory.h"
+#include "iconcretefactory.h"
 #include "base.h"
 #include <QMap>
 
-class ObjectFactory : public IFactory
+class ObjectFactory
 {
 public:
     ~ObjectFactory();
     static ObjectFactory* instance();
     Base* create(QString objName, Base* parent);
-    void registerFactory(QString name, IFactory *factory);
+    void registerFactory(QString name, IConcreteFactory *factory);
 
 private:
     ObjectFactory();
     static ObjectFactory*  m_instance;
-    QMap<QString, IFactory*> m_factoryFunctionRegistry;
+    QMap<QString, IConcreteFactory*> m_factoryFunctionRegistry;
 };
 
 #endif // OBJECTFACTORY_H

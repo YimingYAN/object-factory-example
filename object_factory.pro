@@ -3,8 +3,8 @@ HEADERS += \
     derivedone.h \
     derivedtwo.h \
     objectfactory.h \
-    ifactory.h \
-    global_macro.h
+    global_macro.h \
+    iconcretefactory.h
 
 SOURCES += \
     base.cpp \
@@ -12,4 +12,4 @@ SOURCES += \
     derivedtwo.cpp \
     objectfactory.cpp \
     main.cpp \
-    ifactory.cpp
+    iconcretefactory.cpp

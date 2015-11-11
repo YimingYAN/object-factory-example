@@ -1,11 +1,11 @@
 #ifndef GLOBAL_MACRO_H
 #define GLOBAL_MACRO_H
 
-#include "ifactory.h"
+#include "iconcretefactory.h"
 #include "objectfactory.h"
 #include <QDebug>
 #define REGISTER_TYPE(klass) \
-    class klass##Factory : public IFactory { \
+    class klass##Factory : public IConcreteFactory { \
     public: \
         klass##Factory() \
         { \

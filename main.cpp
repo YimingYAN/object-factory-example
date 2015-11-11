@@ -6,7 +6,6 @@
 
 int main()
 {
-    qDebug() << "Test";
     Base* base = new Base();
     qDebug() << "Base: " << base;
     QString first("DerivedOne");
@@ -15,13 +14,13 @@ int main()
 
     qDebug() << "Create DerivedOne";
     Base* one = fct->create(first, base);
-    qDebug() << "This is " << one->name();
-    qDebug() << one->parent();
+    qDebug() << "This is "  << one->name();
+    qDebug() << "Parent : " << one->parent();
 
     qDebug() << "Create DerivedTwo";
     Base* two = fct->create(second, base);
-    qDebug() << "This is " << two->name();
-    qDebug() << two->parent();
+    qDebug() << "This is "  << two->name();
+    qDebug() << "Parent : " << two->parent();
 
     return 0;
 }

@@ -3,7 +3,7 @@
 
 ObjectFactory::ObjectFactory()
 {
-
+    qDebug() << "Create Object Factory - Should only be called once";
 }
 
 ObjectFactory::~ObjectFactory()

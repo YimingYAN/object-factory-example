@@ -14,20 +14,3 @@ DerivedOne::DerivedOne(Base *base)
 
 REGISTER_TYPE(DerivedOne)
 
-//#include "ifactory.h"
-//#include "objectfactory.h"
-//class DerivedOneFactory : public IFactory
-//{
-//public:
-//    DerivedOneFactory()
-//    {
-//        ObjectFactory::instance()->registerFactory("DerivedOneFactory", this);
-//    }
-//    Base* create(Base* parent)
-//    {
-//        return new DerivedOne(parent);
-//    }
-//};
-
-//static DerivedOneFactory global_DerivedOneFactory;
-

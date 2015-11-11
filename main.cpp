@@ -23,7 +23,5 @@ int main()
     qDebug() << "This is " << two->name();
     qDebug() << two->parent();
 
-    delete fct;
-
     return 0;
 }

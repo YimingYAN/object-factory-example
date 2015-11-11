@@ -1,8 +1,6 @@
 #include "objectfactory.h"
 #include <QDebug>
 
-ObjectFactory* ObjectFactory::m_instance = 0;
-
 ObjectFactory::ObjectFactory()
 {
 
@@ -10,15 +8,14 @@ ObjectFactory::ObjectFactory()
 
 ObjectFactory::~ObjectFactory()
 {
+    qDebug() << "Calling destructor:  ObjectFactory";
     m_factoryFunctionRegistry.clear();
 }
 
 ObjectFactory *ObjectFactory::instance()
 {
-    if(!m_instance) {
-        m_instance = new ObjectFactory;
-    }
-    return m_instance;
+    static ObjectFactory instance;
+    return &instance;
 }
 
 Base *ObjectFactory::create(QString objName, Base *parent)

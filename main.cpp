@@ -12,12 +12,12 @@ int main()
     QString second("GroupTwo::DerivedTwo");
     ObjectFactory* fct = ObjectFactory::instance();
 
-    qDebug() << "Create DerivedOne";
+    qDebug() << "Create " << first;
     Base* one = fct->create(first, base);
     qDebug() << "This is "  << one->name();
     qDebug() << "Parent : " << one->parent();
 
-    qDebug() << "Create DerivedTwo";
+    qDebug() << "Create " << second;
     Base* two = fct->create(second, base);
     qDebug() << "This is "  << two->name();
     qDebug() << "Parent : " << two->parent();
